@@ -1,0 +1,22 @@
+---
+layout: default
+title: Build Log
+---
+<section class="hero">
+  <h1>Building RiffMind — <span class="highlight">in public</span></h1>
+  <p>1 developer + 1 AI COO, building a knowledge crystallization app from scratch. Every decision, every failure, every pivot — documented as it happens.</p>
+</section>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-list-item">
+    <a href="{{ post.url }}">
+      <div class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+      <div class="post-list-title">{{ post.title }}</div>
+      {% if post.summary %}
+      <div class="post-list-summary">{{ post.summary }}</div>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

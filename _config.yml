@@ -1,0 +1,23 @@
+title: "RiffMind — Build Log"
+description: "How an AI COO and a solo developer are building a knowledge crystallization app. Every decision, every failure, every lesson — documented in real time."
+url: "https://build.riffmind.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
